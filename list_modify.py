@@ -1,9 +1,9 @@
 #I will create a list and modify it.
 
-#creating a list and assigning it to a variable called "rivers"
+#Creating a list and assigning it to a variable called "rivers"
 rivers = ['Ganga','Yamuna','Godavari','Saraswati','Narmada','Sindhu','Kavari']
 
-#modifying the list; for Kavari I'll add Gandaki, for Sindhu I'll add Bagmati.
+#Modifying the list; for Kavari I'll add Gandaki, for Sindhu I'll add Bagmati.
 rivers[6]= 'Gandaki'
 rivers[5] = 'Bagmati'
 
@@ -19,4 +19,14 @@ print(rivers)
 
 rivers.insert(0,'Trishuli')
 rivers.insert(1,'Tista')
+print(rivers)
+
+
+#Deleting an item in the list using "del" statement
+del rivers[1]
+print(rivers)
+
+#Removing an item using the pop() method
+popped_river = rivers.pop()
+print(popped_river)
 print(rivers)
