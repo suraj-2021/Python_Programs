@@ -12,3 +12,11 @@ print(rivers)
 #Adding more rivers in the list of rivers
 rivers.append('Rapti')
 rivers.append('Karnali')
+print(rivers)
+
+
+#I can insert a element or river at any position in the list using the insert() method.
+
+rivers.insert(0,Trishuli)
+rivers.insert(0,Tista)
+print(rivers)
