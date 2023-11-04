@@ -8,3 +8,7 @@ rivers[6]= 'Gandaki'
 rivers[5] = 'Bagmati'
 
 print(rivers)
+
+#Adding more rivers in the list of rivers
+rivers.append('Rapti')
+rivers.append('Karnali')
