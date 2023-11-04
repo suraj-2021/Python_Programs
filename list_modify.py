@@ -17,6 +17,6 @@ print(rivers)
 
 #I can insert a element or river at any position in the list using the insert() method.
 
-rivers.insert(0,Trishuli)
-rivers.insert(0,Tista)
+rivers.insert(0,'Trishuli')
+rivers.insert(1,'Tista')
 print(rivers)
