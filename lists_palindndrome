@@ -1,0 +1,14 @@
+#Check for Palindrome: Create a program that checks whether a given string is a palindrome.
+#A palindrome is a word, phrase, or sequence that reads the same backward as forward. For instance, “madam” and “racecar” are palindromes.
+
+#taking a input from the user
+palindrome = str(input("Word Please:"))
+list = []
+#appending each item from the input to a empty list
+for i in palindrome:
+    list.append(i)
+#checking if the reverse of the list is equal to the original list, if yes it's a palindrome
+if list == list[::-1]:
+    print("This is a Palindrome")
+else:
+   print("This is NOT a Palindrome")
