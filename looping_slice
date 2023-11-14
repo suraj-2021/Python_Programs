@@ -1,0 +1,10 @@
+#Creating list of Pizzas and create a copy of it, and use for loop to print each item in the list.
+
+#creating a list of pizzas
+my_pizzas = ['Margherita','Golden Corn','Jalapeno','Double Cheese Margherita','Crisp Caspsicum']
+
+#creating it's copy and assigning it to new variable
+your_pizzas = my_pizzas[:]
+
+for pizza in your_pizzas:
+    print(f"Your Pizza in {pizza}")
