@@ -12,5 +12,8 @@ name_two = 'Krishna'
 #returns false
 name_one == name_two
 
-
+#tests using the lower() method
+lower_name1 = name_one.lower()
+lower_name2= name_two.lower()
+print(name_one,name_two)
 
