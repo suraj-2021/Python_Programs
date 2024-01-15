@@ -1,0 +1,16 @@
+file1 = 'rama.txt'
+file2 = 'krishna.txt'
+file3 = ''
+def avatars(filename):
+    try:
+        with open(filename,'r+') as f:
+             content = len(f.read().split())
+             print(f"The number of names in the file is {content}")
+    except FileNotFoundError:
+           pass
+       
+files = [file1,file2,file3]
+
+for file in files:
+    avatars(file)
+    
