@@ -1,0 +1,15 @@
+<h1>Welcome to our Products Page</h1>
+
+{%for product in products%}
+<a href="{% url 'product_list' %}">
+    <img src="{{ product.image.url }}" alt="{{ product.created_name }}">
+</a>
+<ul>
+    <li>{{product.name}}</li>
+    <li>{{product.description}}</li>
+    <li>{{product.date_added}} </li>
+    <li>{{product.date_updated}} </li>
+    <a href = "{%url 'product_details' product.pk %}"> Details </a>
+    <a href = "{%url 'edit' product.pk %}"> Edit </a>
+</ul>
+{%endfor%}
