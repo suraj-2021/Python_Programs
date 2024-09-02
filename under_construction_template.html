@@ -1,0 +1,19 @@
+<html>
+
+    <form method ="post">
+        {%csrf_token%}
+        {{form.as_p}}
+        <button style ="background-color:blueviolet;" type="submit"id="submit">Submit</button>
+         
+    </form>
+    <script>
+        document.getElementById("submit").addEventListener('mouseover',function(){
+            this.style.backgroundColor = 'greenyellow';
+            
+        })
+    </script>
+
+    {%if output%}
+      <h4>Answer: {{output}}</h4>
+    {%endif%}
+</html>
